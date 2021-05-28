@@ -11,10 +11,10 @@ class Solution:
                 break
             if i >= 1 and nums[i] == nums[i - 1]:
                 continue
-            self.twoSum(nums, i, res)
+            self.twoSumII(nums, i, res)
         return res    
         
-    def twoSum(self, nums: List[int], i:int, res: List[List[int]]) -> None:
+    def twoSumII(self, nums: List[int], i:int, res: List[List[int]]) -> None:
         lo = i + 1
         hi = len(nums) - 1
         while (lo < hi):
